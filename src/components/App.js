@@ -10,6 +10,8 @@ function App() {
 
   const [favoriteChords, setFavoriteChord] = useState([])
 
+  console.log(favoriteChords, "favorite chords in app")
+
   return (
     <div>
       <BrowserRouter>
@@ -17,11 +19,11 @@ function App() {
           <Switch>
             <Route
               exact path='/'
-              render={() => <HomePage />}
+              render={() => <HomePage setFavoriteChord={setFavoriteChord} favoriteChords={favoriteChords} />}
             />
             <Route
               exact path='/favorites'
-              render={() => <Favorites />}
+              render={() => <Favorites favoriteChords={favoriteChords}/>}
             />
           </Switch>
       </BrowserRouter>
