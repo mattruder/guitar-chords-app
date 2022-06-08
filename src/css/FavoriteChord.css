@@ -1,0 +1,25 @@
+.single-chord-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.full-chord-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.single-chord-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.25);
+}

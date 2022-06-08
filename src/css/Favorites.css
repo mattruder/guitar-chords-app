@@ -1,0 +1,21 @@
+.favorite-by-name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  background-color: #424642;
+  margin-bottom: 15vh;
+}
+
+.favorites-container {
+  color: #AEFEFF
+}
+
+.favorite-by-name-container > button {
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+}

@@ -12,7 +12,7 @@ const [currentChord, setCurrentChord] = useState('')
   return (
 
 
-  <div>
+  <div className='home-page-container'>
     <SearchBar setCurrentChord={setCurrentChord}/>
     {currentChord && <SingleChord chord={currentChord} setFavoriteChord={setFavoriteChord} favoriteChords={favoriteChords}/>}
     {!currentChord && <SingleChord chord={currentChord} />}

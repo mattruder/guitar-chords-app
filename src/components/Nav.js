@@ -9,7 +9,7 @@ function Nav() {
         <h1>Strike A Chord</h1>
       </Link>
       <Link to='/favorites'>
-        <h2>Favorites</h2>
+        <h2>My Favorites</h2>
       </Link>
     </nav>
   )

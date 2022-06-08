@@ -1,5 +1,10 @@
 h1, h2 {
   text-decoration: none;
+  color: #AEFEFF
+}
+
+h1 {
+  font-size: 30px;
 }
 
 a:link { text-decoration: none; }
@@ -12,4 +17,5 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-color: #536162
 }
