@@ -13,7 +13,7 @@ function App() {
   console.log(favoriteChords, "favorite chords in app")
 
   return (
-    <div>
+    <div className='app'>
       <BrowserRouter>
         <Nav />
           <Switch>

@@ -1,0 +1,25 @@
+.searchbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  background-color: #424642;
+  margin-bottom: 15vh;
+}
+
+ select {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 20px;
+}
+
+.searchbar-container > button {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

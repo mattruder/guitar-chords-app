@@ -14,11 +14,6 @@ function SearchBar({ setCurrentChord }) {
       .then(data => setCurrentChord(data[0]))
     }
 
-
-
-
-
-
   return (
     <div className="searchbar-container">
       <div className="root-input-area">
