@@ -23,7 +23,7 @@ function App() {
             />
             <Route
               exact path='/favorites'
-              render={() => <Favorites favoriteChords={favoriteChords}/>}
+              render={() => <Favorites setFavoriteChord={setFavoriteChord} favoriteChords={favoriteChords} />}
             />
           </Switch>
       </BrowserRouter>

@@ -1,24 +1,28 @@
-import '../css/SingleChord.css'
+import '../css/FavoriteChord.css'
 import React, { useState, useEffect } from 'react'
 
-function SingleChord({ chord, setFavoriteChord, favoriteChords, favoriteChord }) {
-
-  
-
+function FavoriteChord({ chord, setFavoriteChord, favoriteChords, displayChord }) {
 
 if (chord) {
 
   const chordName = chord.chordName.replaceAll(',', '')
   const chordTones = chord.tones.replaceAll(',', ' ')
 
-  function addToFavorites(singleChord) {
+  function removeFromFavorites(singleChord) {
 
     const favoriteChordNames = favoriteChords.map((chord) => {
       return chord.chordName
     })
 
-    if (!favoriteChordNames.includes(singleChord.chordName)) {
-      setFavoriteChord([...favoriteChords, singleChord])
+    const favoriteChordIndex = favoriteChordNames.indexOf(singleChord.chordName)
+
+    if (favoriteChordNames.includes(singleChord.chordName)) {
+      setFavoriteChord([
+        ...favoriteChords.slice(0, favoriteChordIndex),
+        ...favoriteChords.slice(favoriteChordIndex + 1, favoriteChords.length)
+      ])
+
+        displayChord('')
     } else {
       return
     }
@@ -40,11 +44,11 @@ if (chord) {
         <h3>{chordTones}</h3>
       </div>
       <div className="favorite-btn-container">
-        <button onClick={() => addToFavorites(chord)}>Favorite</button>
+        <button onClick={() => removeFromFavorites(chord)}>UnFavorite</button>
       </div>
     </div>
   )
-} else {
+} else if (chord === '') {
   return (
     <div className="single-chord-container">
       <h1>Select A Chord</h1>
@@ -54,4 +58,4 @@ if (chord) {
 
 }
 
-export default SingleChord
+export default FavoriteChord
