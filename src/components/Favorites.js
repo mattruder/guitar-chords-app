@@ -12,7 +12,8 @@ const [chordToDisplay, displayChord] = useState('')
 
 
     const favoriteChordNames = favoriteChords.map((chord) => {
-      return <button onClick={() => displayChord(chord)}>{chord.chordName.replaceAll(',', '')}</button>
+      const chordName = chord.chordName.replaceAll(',', '')
+      return <button id={chordName} onClick={() => displayChord(chord)}>{chord.chordName.replaceAll(',', '')}</button>
     })
 
 

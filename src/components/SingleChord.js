@@ -45,7 +45,7 @@ if (chord) {
       </div>
       </div>
       <div className="favorite-btn-container">
-        <button onClick={() => addToFavorites(chord)}>Favorite</button>
+        <button className="favorite-btn" onClick={() => addToFavorites(chord)}>Favorite</button>
       </div>
       </div>
     </div>
