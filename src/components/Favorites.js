@@ -13,7 +13,7 @@ const [chordToDisplay, displayChord] = useState('')
 
     const favoriteChordNames = favoriteChords.map((chord) => {
       const chordName = chord.chordName.replaceAll(',', '')
-      return <button id={chordName} onClick={() => displayChord(chord)}>{chord.chordName.replaceAll(',', '')}</button>
+      return <button key={chordName} id={chordName} onClick={() => displayChord(chord)}>{chord.chordName.replaceAll(',', '')}</button>
     })
 
 
@@ -23,7 +23,7 @@ const [chordToDisplay, displayChord] = useState('')
           {favoriteChordNames}
         </div>
         <div className='chord-display-container'>
-          <FavoriteChord chord={chordToDisplay} chordToDisplay={chordToDisplay} displayChord={displayChord} setFavoriteChord={setFavoriteChord} favoriteChords={favoriteChords} />
+          <FavoriteChord chord={chordToDisplay} displayChord={displayChord} setFavoriteChord={setFavoriteChord} favoriteChords={favoriteChords} />
         </div>
       </div>
     )
