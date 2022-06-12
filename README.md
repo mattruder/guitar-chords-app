@@ -40,7 +40,7 @@ Upon load, a user will see a homepage with a searchbar featuring different chord
 
 ## Acknowledgments
 
-* [Turing Scool of Software & Design](https://turing.edu/)
+* [Turing School of Software & Design](https://turing.edu/)
 * Mentors: Joshua Sevy
 * Turing Instructors: Kayla Gordon and Robbie Jaeger
 
