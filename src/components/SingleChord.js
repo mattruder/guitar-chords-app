@@ -1,7 +1,8 @@
 import '../css/SingleChord.css'
 import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 
-function SingleChord({ chord, setFavoriteChord, favoriteChords, favoriteChord }) {
+function SingleChord({ chord, setFavoriteChord, favoriteChords }) {
 
 
 
@@ -63,3 +64,8 @@ if (chord) {
 }
 
 export default SingleChord
+
+SingleChord.propTypes = {
+  chord: PropTypes.any,
+  favoriteChords: PropTypes.array
+}

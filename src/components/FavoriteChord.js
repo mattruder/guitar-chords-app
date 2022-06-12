@@ -1,5 +1,6 @@
 import '../css/FavoriteChord.css'
 import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 
 function FavoriteChord({ chord, setFavoriteChord, favoriteChords, displayChord }) {
 
@@ -67,3 +68,8 @@ if (chord) {
 }
 
 export default FavoriteChord
+
+FavoriteChord.propTypes = {
+  chord: PropTypes.any,
+  favoriteChords: PropTypes.array
+}
