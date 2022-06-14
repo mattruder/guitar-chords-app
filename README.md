@@ -31,7 +31,9 @@ Upon load, a user will see a homepage with a searchbar featuring different chord
 
 ![application gif](https://user-images.githubusercontent.com/36666973/173247410-0ce668ce-1807-4264-85f8-4412c71d473e.gif)
 
+## Deployed Link
 
+https://guitar-chords-app-ruder.herokuapp.com/
 
 ## Contributors
 
